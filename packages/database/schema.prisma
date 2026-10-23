@@ -17,11 +17,11 @@ model agents {
   model_provider String
 }
 
-model tools {
+model organizations {
   id Int @id @default(autoincrement())
-  agent_id Int
   name String
-  webhook_url String
+  slug String
+  billing_tier String
 }
 
 model execution_runs {
